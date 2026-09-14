@@ -1,0 +1,32 @@
+   <!-- about section
+   ================================================== -->
+   {% assign s = site.data.sections.about %}
+   <section id="about">
+
+      {%- comment -%} the photo and bio sit inside the intro block {%- endcomment -%}
+      {%- capture bio -%}
+            <div class="intro-info{% unless s.photo %} no-photo{% endunless %}">
+               {% if s.photo %}<img src="{{ s.photo | relative_url }}" alt="{{ site.name }}">{% endif %}
+               <p class="lead">{{ s.lead }}</p>
+            </div>
+      {%- endcapture -%}
+      {% include section-intro.html s=s extra=bio skip_lead=true %}
+
+      {% if s.buttons %}
+      <div class="row button-section">
+         <div class="col-twelve">
+            {% for b in s.buttons %}
+            {%- if b.type == "mailto" -%}
+               {% assign href = site.contact.email | prepend: "mailto:" %}
+            {%- elsif b.url contains "://" or b.url == "#" -%}
+               {% assign href = b.url %}
+            {%- else -%}
+               {% assign href = b.url | relative_url %}
+            {%- endif -%}
+            <a href="{{ href }}" title="{{ b.text }}" class="{{ b.style }}">{{ b.text }}</a>
+            {% endfor %}
+         </div>
+      </div>
+      {% endif %}
+
+   </section> <!-- /about -->

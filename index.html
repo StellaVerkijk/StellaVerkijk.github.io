@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+{%- comment -%}
+  The page is assembled from the `sections:` list in _config.yml.
+  Turn a section off there rather than deleting anything here.
+{%- endcomment -%}
+{% for section in site.sections %}{% if section.enabled %}
+{% assign section_file = section.id | prepend: "sections/" | append: ".html" %}
+{% include {{ section_file }} %}
+{% endif %}{% endfor %}

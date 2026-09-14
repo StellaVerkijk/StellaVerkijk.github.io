@@ -1,0 +1,19 @@
+{%- comment -%}
+  Social icon list. Reads site.social from _config.yml.
+  Usage: {% include social-links.html class="footer-social" %}
+
+  Each entry's `icon` is a full icon class, so both icon sets work:
+    fa fa-linkedin        Font Awesome  (fontawesome.com/v4/icons)
+    ai ai-google-scholar  Academicons   (jpswalsh.github.io/academicons)
+  An entry with `type: email` links to the address in site.contact.email.
+{%- endcomment -%}
+<ul class="{{ include.class }}">
+   {% for link in site.social %}
+   {%- if link.type == "email" -%}
+      {% assign href = site.contact.email | prepend: "mailto:" %}
+   {%- else -%}
+      {% assign href = link.url %}
+   {%- endif -%}
+   <li><a href="{{ href }}" target="_blank" rel="noopener" title="{{ link.title }}"><i class="{{ link.icon }}"></i></a></li>
+   {% endfor %}
+</ul>

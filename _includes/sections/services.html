@@ -1,0 +1,28 @@
+   <!-- services section
+   ================================================== -->
+   <section id="services">
+
+      <div class="overlay"></div>
+
+      {% include section-intro.html s=site.data.sections.services %}
+
+      <div class="row services-content">
+         <div id="owl-slider" class="owl-carousel services-list">
+
+            {% for service in site.data.services %}
+            <div class="service">
+
+               <span class="icon"><i class="{{ service.icon }}"></i></span>
+
+               <div class="service-content">
+                  <h3>{{ service.title }}</h3>
+                  <p class="desc">{{ service.description }}</p>
+               </div>
+
+            </div> <!-- /service -->
+            {% endfor %}
+
+         </div> <!-- /services-list -->
+      </div> <!-- /services-content -->
+
+   </section> <!-- /services -->

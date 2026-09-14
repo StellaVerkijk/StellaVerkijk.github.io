@@ -1,0 +1,50 @@
+   <!-- contact section
+   ================================================== -->
+   <section id="contact">
+
+      {% include section-intro.html s=site.data.sections.contact %}
+
+      {%- comment -%}
+        The blocks share the row evenly however many of them there are:
+        three -> thirds, two -> halves, one -> full width. Leaving a
+        field blank under `contact:` in _config.yml drops its block.
+      {%- endcomment -%}
+      {%- assign shown = 0 -%}
+      {%- if site.contact.location %}{% assign shown = shown | plus: 1 %}{% endif -%}
+      {%- if site.contact.email %}{% assign shown = shown | plus: 1 %}{% endif -%}
+      {%- if site.contact.phone %}{% assign shown = shown | plus: 1 %}{% endif -%}
+      {%- case shown -%}
+        {%- when 1 -%}{% assign col = "col-twelve" %}
+        {%- when 2 -%}{% assign col = "col-six" %}
+        {%- else -%}{% assign col = "col-four" %}
+      {%- endcase -%}
+
+      <div class="row contact-info">
+
+         {% if site.contact.location %}
+         <div class="{{ col }} tab-full">
+            <div class="icon"><i class="icon-pin"></i></div>
+            <h5>Where to find me</h5>
+            <p>{{ site.contact.location | strip | newline_to_br }}</p>
+         </div>
+         {% endif %}
+
+         {% if site.contact.email %}
+         <div class="{{ col }} tab-full">
+            <div class="icon"><i class="icon-mail"></i></div>
+            <h5>Email Me At</h5>
+            <p><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></p>
+         </div>
+         {% endif %}
+
+         {% if site.contact.phone %}
+         <div class="{{ col }} tab-full">
+            <div class="icon"><i class="icon-phone"></i></div>
+            <h5>Call Me At</h5>
+            <p>{{ site.contact.phone }}</p>
+         </div>
+         {% endif %}
+
+      </div> <!-- /contact-info -->
+
+   </section> <!-- /contact -->

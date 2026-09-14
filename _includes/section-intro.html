@@ -1,0 +1,36 @@
+{%- comment -%}
+  The label / heading / lead block that opens every section.
+
+  Usage:
+    {% include section-intro.html s=site.data.sections.about %}
+    {% include section-intro.html s=... extra=some_html skip_lead=true %}
+
+  Layout settings, all optional, set per section in _data/sections.yml:
+    text_width      how wide the block may get, e.g. 60rem (default 700px)
+    align           left | center | right - the whole block
+    align_label     override for the small label only
+    align_heading   override for the big heading only
+    align_text      override for the paragraph(s) only
+{%- endcomment -%}
+
+{%- assign a_label   = include.s.align_label   | default: include.s.align -%}
+{%- assign a_heading = include.s.align_heading | default: include.s.align -%}
+{%- assign a_text    = include.s.align_text    | default: include.s.align -%}
+
+{%- assign style = "" -%}
+{%- if include.s.text_width -%}
+  {%- assign style = style | append: "max-width:" | append: include.s.text_width | append: ";margin-left:auto;margin-right:auto;" -%}
+{%- endif -%}
+{%- assign block_class = "" -%}
+{%- if a_text -%}{%- assign block_class = a_text | prepend: " align-" -%}{%- endif -%}
+
+      <div class="row section-intro{{ block_class }}"{% if style != "" %} style="{{ style }}"{% endif %}>
+         <div class="col-twelve">
+
+            {% if include.s.label %}<h5{% if a_label %} class="align-{{ a_label }}"{% endif %}>{{ include.s.label }}</h5>{% endif %}
+            {% if include.s.heading %}<h1{% if a_heading %} class="align-{{ a_heading }}"{% endif %}>{{ include.s.heading }}</h1>{% endif %}
+            {% unless include.skip_lead %}{% if include.s.lead %}<p class="lead">{{ include.s.lead }}</p>{% endif %}{% endunless %}
+            {{ include.extra }}
+
+         </div>
+      </div> <!-- /section-intro -->

@@ -1,0 +1,24 @@
+   <!-- header
+   ================================================== -->
+   <header>
+      <div class="row">
+
+         <div class="top-bar">
+            <a class="menu-toggle" href="#"><span>Menu</span></a>
+
+            <div class="logo">
+               <a href="{{ '/' | relative_url }}">{{ site.name }}</a>
+            </div>
+
+            <nav id="main-nav-wrap">
+               <ul class="main-navigation">
+                  {%- assign menu = site.sections | where: "enabled", true -%}
+                  {% for item in menu %}{% if item.nav %}
+                  <li{% if forloop.first %} class="current"{% endif %}><a class="smoothscroll" href="#{{ item.id }}" title="">{{ item.nav }}</a></li>
+                  {% endif %}{% endfor %}
+               </ul>
+            </nav>
+         </div> <!-- /top-bar -->
+
+      </div> <!-- /row -->
+   </header> <!-- /header -->

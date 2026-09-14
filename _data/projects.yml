@@ -1,0 +1,46 @@
+# ===================================================================
+# Projects / papers
+#
+# Each entry becomes one card. Clicking anywhere on the card opens
+# `url` in a new tab.
+#
+#   title    the project or paper title. If it contains a colon, wrap the
+#            whole title in "double quotes" - YAML reads an unquoted
+#            colon as the start of a new field.
+#   venue    optional small line under the title (journal, year, role)
+#   bio      the short description
+#   figure   image shown beside the text (any size; it is cropped to fit)
+#   url      where the card links to — leave blank for a card that
+#            is not clickable
+# ===================================================================
+
+- title:  GLOBALISE
+  venue:  NWO Groot Project
+  bio: >-
+    A large scale interdisciplinary effort to digitize the archives of the Dutch East India Company and make them searchable.
+  figure: 
+  url:    "https://globalise.huygens.knaw.nl"
+
+- title:  MedRoBERTA.nl
+  venue:  Academic Project
+  bio: >-
+    We created the first Language Model pre-trained on real-world hospital notes from Dutch EPDs.
+  figure: 
+  url:    "https://medroberta.nl"
+
+- title:  "Language Models Lack Temporal Generalization and Bigger is Not Better"
+  venue:  Findings of the Association of Computational Linguistics
+  bio: >-
+    In this paper I present elaborate testing of various LLMs on their generalization capacities.
+  figure: 
+  url:    "https://aclanthology.org/2026.loreslm-1.45/"
+
+- title:  "Out-of-Tune rather than Fine-Tuned: How Pre-training, Fine-tuning and Tokenization Affect Semantic Similarity in a Historical, Non-Standardized Domain"
+  venue:  Proceedings of the Second Workshop on Language Models for Low-Resource Languages (LoResLM 2026)
+  bio: >-
+    In this paper I investigate the impact of fine-tuning on encoder language models.
+  figure: 
+  url:    "https://aclanthology.org/2026.loreslm-1.45/"
+
+
+

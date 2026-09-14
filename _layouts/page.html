@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<!-- a standalone page: drop a .md file in _pages/ and it lands here -->
+<section id="page-content" class="page-section">
+
+   <div class="row section-intro">
+      <div class="col-twelve">
+         {% if page.label %}<h5>{{ page.label }}</h5>{% endif %}
+         <h1>{{ page.title }}</h1>
+      </div>
+   </div>
+
+   <div class="row">
+      <div class="col-twelve">
+         {{ content }}
+      </div>
+   </div>
+
+</section>

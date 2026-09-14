@@ -1,0 +1,25 @@
+   <!-- intro section
+   ================================================== -->
+   <section id="intro">
+
+      <div class="intro-overlay"></div>
+
+      <div class="intro-content">
+         <div class="row">
+            <div class="col-twelve">
+
+               <h1>{{ site.name }}</h1>
+
+               {% if site.roles %}
+               <p class="intro-position">
+                  {% for role in site.roles %}<span>{{ role }}</span>{% endfor %}
+               </p>
+               {% endif %}
+
+            </div>
+         </div>
+      </div> <!-- /intro-content -->
+
+      {% include social-links.html class="intro-social" %}
+
+   </section> <!-- /intro -->

@@ -1,0 +1,60 @@
+# ===================================================================
+# Resume timeline
+#
+# Two groups: work experience and education. Add an entry by copying a
+# block. `icon` is a Font Awesome name (fa-*).
+# ===================================================================
+
+- group: Work Experience
+  icon:  fa-graduation-cap
+  entries:
+    - role:  UI Designer
+      dates: July 2015 - Present
+      where: Awesome Studio
+      description: >-
+        Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna
+        consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis
+        velit esse sed Ut proident cupidatat nulla esse cillum laborum.
+
+    - role:  Front-end Developer
+      dates: July 2014 - June 2015
+      where: Super Cool Agency
+      description: >-
+        Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna
+        consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis
+        velit esse sed Ut proident cupidatat nulla esse cillum laborum.
+
+    - role:  Web Designer
+      dates: May 2013 - June 2014
+      where: Great Designs Studio
+      description: >-
+        Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna
+        consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis
+        velit esse sed Ut proident cupidatat nulla esse cillum laborum.
+
+- group: Education
+  icon:  fa-briefcase
+  entries:
+    - role:  Master Degree
+      dates: July 2015 - Present
+      where: University of Life
+      description: >-
+        Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna
+        consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis
+        velit esse sed Ut proident cupidatat nulla esse cillum laborum.
+
+    - role:  Bachelor Degree
+      dates: July 2014 - June 2015
+      where: State Design University
+      description: >-
+        Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna
+        consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis
+        velit esse sed Ut proident cupidatat nulla esse cillum laborum.
+
+    - role:  Bachelor Degree
+      dates: May 2013 - June 2014
+      where: Design College
+      description: >-
+        Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna
+        consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis
+        velit esse sed Ut proident cupidatat nulla esse cillum laborum.

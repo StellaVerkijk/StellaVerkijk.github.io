@@ -1,0 +1,42 @@
+# ===================================================================
+# Services carousel
+#
+# `icon` is a Micons name (icon-*). Add or remove entries freely; the
+# carousel adjusts itself.
+# ===================================================================
+
+- title: Webdesign
+  icon:  icon-earth
+  description: >-
+    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+
+- title: Web Development
+  icon:  icon-window
+  description: >-
+    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+
+- title: Branding
+  icon:  icon-paint-brush
+  description: >-
+    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+
+- title: UI/UX Design
+  icon:  icon-toggles
+  description: >-
+    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+
+- title: Graphics Design
+  icon:  icon-image
+  description: >-
+    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+
+- title: Consultancy
+  icon:  icon-chat
+  description: >-
+    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.

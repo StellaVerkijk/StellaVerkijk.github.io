@@ -1,0 +1,75 @@
+# ===================================================================
+# Section headings and intro copy
+#
+# One block per section on the homepage. `label` is the small pink
+# word above the heading, `heading` the big line below it, `lead` the
+# paragraph under that. Leave any of them blank to hide it.
+#
+# Two optional layout settings per section:
+#
+#   text_width:  how wide the heading + lead may get, e.g. 60rem.
+#                The default is 700px, so use a LARGER value to widen the
+#                text and a smaller one to narrow it. Leave it out to keep
+#                the 700px default. The page itself is 1140px wide, so
+#                anything past 114rem makes no further difference.
+#   align:       left, center or right - moves the whole block. Leave it
+#                out to keep the template default (centre).
+#
+# To align one part differently from the rest, add one of these next to
+# `align:`; each overrides it for that part only:
+#
+#   align_label:    the small pink word ("About", "Contact", ...)
+#   align_heading:  the big heading line
+#   align_text:     the paragraph(s) below it
+#
+# 1rem = 10px here, so 60rem is 600px.
+# ===================================================================
+
+about:
+  label:   About
+  heading:
+  text_width: 90rem     # default is 700px; larger widens, smaller narrows
+  align:       left     # the block as a whole
+  align_label: left   # ...but keep the "About" label centred
+  lead: >-
+    Generative Large Language Models have made a significant impact on our daily lives and the way businesses, research institutions and governmental bodies operate. While they can offer great advantages, there are also significant downsides, such as token costs, reliance on unknown biases, privacy breaches and the general dependency on a model that is not yours. I can offer alternatives that are cheaper and more reliable.
+    
+  # photo:   images/profile-pic.jpg
+  photo:  
+  buttons:
+    - text: Contact Me
+      # `mailto` uses the address from _config.yml
+      type: mailto
+      style: "button stroke"
+    - text: Download CV
+      # a path starting with / is a file in this repo (here: docs/)
+      url:  "/docs/resume_stella_verkijk.pdf"
+      style: "button button-primary"
+
+resume:
+  label:   Resume
+  heading: More of my credentials.
+  lead: >-
+    Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing
+    dolore officia nisi aliqua incididunt Ut veniam lorem ipsum.
+
+projects:
+  label:   Selected Projects & Papers
+  heading: 
+  lead: >-
+    
+
+services:
+  label:   Services
+  heading: What Can I Do For You?
+  lead: >-
+    Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing
+    dolore officia nisi aliqua incididunt Ut veniam lorem ipsum.
+
+contact:
+  label:   Contact
+  heading: 
+  text_width: 60rem
+  align:      left
+  lead: >-
+    I can be hired for consultation and software development in the area of Natural Language Processing.

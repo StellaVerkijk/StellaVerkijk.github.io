@@ -1,0 +1,43 @@
+   <!-- resume section
+   ================================================== -->
+   <section id="resume" class="grey-section">
+
+      {% include section-intro.html s=site.data.sections.resume %}
+
+      {% for group in site.data.resume %}
+      <div class="row resume-timeline">
+
+         <div class="col-twelve resume-header">
+            <h2>{{ group.group }}</h2>
+         </div> <!-- /resume-header -->
+
+         <div class="col-twelve">
+            <div class="timeline-wrap">
+
+               {% for entry in group.entries %}
+               <div class="timeline-block">
+
+                  <div class="timeline-ico">
+                     <i class="fa {{ group.icon }}"></i>
+                  </div>
+
+                  <div class="timeline-header">
+                     <h3>{{ entry.role }}</h3>
+                     <p>{{ entry.dates }}</p>
+                  </div>
+
+                  <div class="timeline-content">
+                     <h4>{{ entry.where }}</h4>
+                     <p>{{ entry.description }}</p>
+                  </div>
+
+               </div> <!-- /timeline-block -->
+               {% endfor %}
+
+            </div> <!-- /timeline-wrap -->
+         </div> <!-- /col-twelve -->
+
+      </div> <!-- /resume-timeline -->
+      {% endfor %}
+
+   </section> <!-- /resume -->

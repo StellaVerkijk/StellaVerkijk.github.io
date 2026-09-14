@@ -1,0 +1,38 @@
+/**
+ * ===================================================================
+ * theme.css - site-wide design tokens
+ *
+ * Every colour, and a few key type settings, live here. Change a value
+ * once and it updates everywhere on the site. Loaded before base.css
+ * and main.css so the rest of the CSS can read from it.
+ * ------------------------------------------------------------------- 
+ */
+:root {
+
+	/* brand ---------------------------------------------------------- */
+	--color-accent:        #6acbf1;   /* pink: links, highlights, buttons */
+	--color-accent-dark:   #0066cc;   /* accent hover / pressed state     */
+
+	/* neutrals ------------------------------------------------------- */
+	--color-white:         #FFFFFF;
+	--color-black:         #000000;   /* nav bar background              */
+	--color-dark:          #151b4e;   /* dark section backgrounds        */
+	--color-grey-light:    #F1F1F1;   /* "grey-section" backgrounds      */
+
+	/* text ----------------------------------------------------------- */
+	--color-text:          #313131;   /* body copy + headings            */
+	--color-text-muted:    #888888;   /* secondary copy                  */
+	--color-text-faded:    #a1a1a1;   /* captions, footer copy           */
+
+	/* social icons --------------------------------------------------- */
+	/* Academicons (the ai-* icons, e.g. Google Scholar) draw smaller than
+	   Font Awesome at the same size, so they get scaled up. Nudge this
+	   number if the academic icons look too big or too small next to the
+	   others: 1 = same size as the rest. */
+	--academicon-scale:    1.15;
+
+	/* header --------------------------------------------------------- */
+	--nav-height:          66px;
+	--nav-logo-gap:        7rem;      /* space between name and the menu */
+	--nav-item-gap:        3rem;      /* space between menu items        */
+}

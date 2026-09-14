@@ -1,0 +1,122 @@
+# ===================================================================
+# Site configuration
+#
+# Everything that identifies the site or its owner lives here. Change a
+# value, save, and it updates everywhere it is used.
+# Note: changes to this file need a restart of `bundle exec jekyll serve`.
+# ===================================================================
+
+# --- identity ------------------------------------------------------
+name:        Stella Verkijk
+title:       Stella Verkijk
+tagline:     # short line under the name, shown in the browser tab area
+description: >-
+  Personal website of Stella Verkijk.
+
+url:         ""      # e.g. https://stellaverkijk.nl (no trailing slash)
+baseurl:     ""      # subpath if the site is not at the domain root
+
+# --- what the intro shows under the name ---------------------------
+# Add or remove lines freely.
+roles:
+  # - Front-end Developer
+  # - UI/UX Designer
+  - Building in-house alternatives for Large Language Models 
+
+# --- contact -------------------------------------------------------
+contact:
+  email:   s.verkijk@vu.nl   # TODO: replace with the real address
+  phone:                                # leave blank to hide
+  location: |
+    Amsterdam
+    The Netherlands
+
+# --- social links --------------------------------------------------
+# Shown under the intro and in the footer. Delete a line to remove it.
+#
+#   icon:  a full icon class from either set that ships with the site:
+#            fa fa-*        Font Awesome 4  -> fontawesome.com/v4/icons
+#            ai ai-*        Academicons     -> jpswalsh.github.io/academicons
+#          Academicons covers the academic ones: google-scholar, orcid,
+#          arxiv, researchgate, semantic-scholar, dblp, open-access, ...
+#   type:  set to `email` to link to the address under `contact:` above;
+#          otherwise give a `url:`
+social:
+  - icon: "ai ai-google-scholar"
+    title: Google Scholar
+    url:  "https://scholar.google.com/citations?user=xeMWvjIAAAAJ&hl=nl&oi=ao"
+
+  - icon: "fa fa-envelope"
+    title: Email
+    type: email
+
+  - icon: "fa fa-linkedin"
+    title: LinkedIn
+    url:  "https://www.linkedin.com/in/stella-verkijk-3037621bb/"
+
+  - icon: "fa fa-github"
+    title: GitHub
+    url:  "https://github.com/StellaVerkijk"
+
+# --- sections & navigation ----------------------------------------
+# Every section of the homepage is listed here, in the order it appears.
+#
+#   enabled: false  hides the section AND its menu item, but keeps all
+#                   its content — flip it back to true to restore it.
+#   nav:            the label in the top bar. Leave blank to render the
+#                   section without giving it a menu item.
+#
+# To reorder the page, reorder this list.
+sections:
+  - id: intro
+    nav: Home
+    enabled: true
+
+  - id: about
+    nav: About
+    enabled: true
+
+  - id: resume
+    nav: Resume
+    enabled: false
+
+  - id: projects
+    nav: Projects
+    enabled: true
+
+  - id: services
+    nav: Services
+    enabled: false
+
+  - id: contact
+    nav: Contact
+    enabled: true
+
+# --- footer --------------------------------------------------------
+footer:
+  copyright: "© Stella Verkijk 2026."
+  credit: 'Design by <a href="http://www.styleshout.com/">styleshout</a>'
+
+# --- build ---------------------------------------------------------
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - readme.txt
+  - Kards10
+  - inc
+  - vendor
