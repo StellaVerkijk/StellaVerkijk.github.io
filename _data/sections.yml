@@ -32,7 +32,7 @@ about:
   align:       left     # the block as a whole
   align_label: left   # ...but keep the "About" label centred
   lead: >-
-    Generative Large Language Models have made a significant impact on our daily lives and the way businesses, research institutions and governmental bodies operate. While they can offer great advantages, there are also significant downsides, such as token costs, reliance on unknown biases, privacy breaches and the general dependency on a model that is not yours. I can offer alternatives that are cheaper and more reliable.
+     Why send money to a third-party company every time you want to use a language model? I can offer an alternative. Generative Large Language Models have made a significant impact on our daily lives and the way businesses, research institutions and governmental bodies operate. While they can offer great advantages, there are also significant downsides, such as token costs, reliance on unknown biases, privacy breaches and the general dependency on a model that is not yours.
     
   # photo:   images/profile-pic.jpg
   photo:  
