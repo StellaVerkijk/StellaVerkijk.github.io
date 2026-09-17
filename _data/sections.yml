@@ -32,8 +32,7 @@ about:
   align:       left     # the block as a whole
   align_label: left   # ...but keep the "About" label centred
   lead: >-
-     Why send money to a third-party company every time you want to use a language model? I can offer an alternative. Generative Large Language Models have made a significant impact on our daily lives and the way businesses, research institutions and governmental bodies operate. While they can offer great advantages, there are also significant downsides, such as token costs, reliance on unknown biases, privacy breaches and the general dependency on a model that is not yours.
-    
+     Why rely on a third-party company for your language technology? I can offer an alternative with no token costs, no risk of privacy breaches and no reliance on unknown biases. Own your own language technology.
   # photo:   images/profile-pic.jpg
   photo:  
   buttons:

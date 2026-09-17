@@ -21,7 +21,7 @@ baseurl:     ""      # subpath if the site is not at the domain root
 roles:
   # - Front-end Developer
   # - UI/UX Designer
-  - Building in-house alternatives for Large Language Models 
+  - Building in-house alternatives for Generative Large Language Models 
 
 # --- contact -------------------------------------------------------
 contact:
