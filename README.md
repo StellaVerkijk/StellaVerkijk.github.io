@@ -257,7 +257,9 @@ version, and `git checkout <file>` throws those changes away.
 
 ## Credits
 
+* Setup: watemeleon
 * Design: the *Kards* template by [styleshout](http://www.styleshout.com/).
 * Icons: [Font Awesome 4](https://fontawesome.com/v4/) (SIL OFL 1.1 / MIT)
   and [Academicons 1.9.4](https://jpswalsh.github.io/academicons/) by
   James Walsh (SIL OFL 1.1).
+* Background image: Stella Verkijk
