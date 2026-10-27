@@ -46,23 +46,15 @@ about:
       style: "button button-primary"
 
 mission: 
-  label:
-  heading:  Mission Statement  
+  label:  Mission Statement 
+  heading:   
   text_width: 90rem     # default is 700px; larger widens, smaller narrows
   align:       left     # the block as a whole
   align_label: left   # ...but keep the "About" label centred
   lead: >-
      Massive reliance on Big Tech is leading to a huge power shift in the world. I strive to make companies and institutions take power back and reduce their environmental footprint, while saving some money in the meantime. 
   photo:  
-  buttons:
-    - text: Contact Me
-      # `mailto` uses the address from _config.yml
-      type: mailto
-      style: "button stroke"
-    - text: Download CV
-      # a path starting with / is a file in this repo (here: docs/)
-      url:  "/docs/resume_stella_verkijk.pdf"
-      style: "button button-primary"
+
 
 resume:
   label:   Resume

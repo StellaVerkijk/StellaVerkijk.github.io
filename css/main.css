@@ -1616,6 +1616,79 @@ header .logo a {
 
 /** 
  * ===================================================================
+ * 11. Mission statement - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- 
+ */
+#mission {
+	background: var(--color-white);
+	padding-top: 12rem;
+	padding-bottom: 15rem;
+}
+#mission .section-intro {
+	margin-bottom: 3rem;
+}
+
+.intro-info {
+	margin-top: 4.2rem;
+	margin-right: -30px;
+	margin-left: -30px;
+}
+.intro-info img {
+	height: 9rem;
+	width: 9rem;
+	border-radius: 50%;
+	margin: .9rem 0 0 0;
+	float: left;
+}
+.intro-info .lead {
+	text-align: left;
+	padding-left: 13rem;
+}
+
+.mission-content {
+	position: relative;
+	text-align: left;
+	max-width: 850px;
+	margin-bottom: 3.6rem;
+}
+.mission-content h3 {
+	font-family: "poppins-bold", sans-serif;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	letter-spacing: .25rem;
+}
+.mission-content .info-list {
+	list-style: none;
+	margin-left: 0;
+}
+.mission-content .info-list li {
+	padding: 0 0 1.5rem 0;
+	margin-bottom: .6rem;
+}
+.mission-content .info-list li strong {
+	font-family: "poppins-bold", sans-serif;
+	color: var(--color-text);
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	font-size: 1.5rem;
+	line-height: 3rem;
+}
+.mission-content .info-list li span {
+	display: block;
+	font-family: "poppins-regular", sans-serif;
+	color: var(--color-text-muted);
+	font-size: 1.5rem;
+	line-height: 1;
+}
+.mission-content .skill-bars {
+	margin-top: 6rem;
+}
+
+
+
+/** 
+ * ===================================================================
  * 12. resume - (_layout.scss)
  *
  * ------------------------------------------------------------------- 
