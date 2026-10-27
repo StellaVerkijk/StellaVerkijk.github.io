@@ -26,13 +26,33 @@
 # ===================================================================
 
 about:
-  label:   About
+  label:   
   heading:
   text_width: 90rem     # default is 700px; larger widens, smaller narrows
   align:       left     # the block as a whole
   align_label: left   # ...but keep the "About" label centred
   lead: >-
      Why rely on a third-party company for your language technology? I can offer an alternative with no token costs, no risk of privacy breaches and no reliance on unknown biases. Own your own language technology.
+  # photo:   images/profile-pic.jpg
+  photo:  
+  buttons:
+    - text: Contact Me
+      # `mailto` uses the address from _config.yml
+      type: mailto
+      style: "button stroke"
+    - text: Download CV
+      # a path starting with / is a file in this repo (here: docs/)
+      url:  "/docs/resume_stella_verkijk.pdf"
+      style: "button button-primary"
+
+mission: 
+  label:
+  heading:  Mission Statement  
+  text_width: 90rem     # default is 700px; larger widens, smaller narrows
+  align:       left     # the block as a whole
+  align_label: left   # ...but keep the "About" label centred
+  lead: >-
+     Massive reliance on Big Tech is leading to a huge power shift in the world. I strive to make companies and institutions take power back and reduce their environmental footprint, while saving some money in the meantime.
   # photo:   images/profile-pic.jpg
   photo:  
   buttons:
