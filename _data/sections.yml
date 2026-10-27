@@ -27,7 +27,7 @@
 
 about:
   label:   
-  heading:
+  heading:  About
   text_width: 90rem     # default is 700px; larger widens, smaller narrows
   align:       left     # the block as a whole
   align_label: left   # ...but keep the "About" label centred
