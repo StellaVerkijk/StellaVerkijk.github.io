@@ -1621,7 +1621,7 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #mission {
-	background: var(--color-white);
+	background: var(--color-grey);
 	padding-top: 12rem;
 	padding-bottom: 15rem;
 }
@@ -1642,7 +1642,7 @@ header .logo a {
 	float: left;
 }
 .intro-info .lead {
-	text-align: left;
+	text-align: centre;
 	padding-left: 13rem;
 }
 
