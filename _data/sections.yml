@@ -52,8 +52,7 @@ mission:
   align:       left     # the block as a whole
   align_label: left   # ...but keep the "About" label centred
   lead: >-
-     Massive reliance on Big Tech is leading to a huge power shift in the world. I strive to make companies and institutions take power back and reduce their environmental footprint, while saving some money in the meantime.
-  # photo:   images/profile-pic.jpg
+     Massive reliance on Big Tech is leading to a huge power shift in the world. I strive to make companies and institutions take power back and reduce their environmental footprint, while saving some money in the meantime. 
   photo:  
   buttons:
     - text: Contact Me
