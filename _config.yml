@@ -80,6 +80,10 @@ sections:
     nav: Resume
     enabled: false
 
+  - id: mission
+    nav: Mission
+    enabled: true
+
   - id: projects
     nav: Projects
     enabled: true
